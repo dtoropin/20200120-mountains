@@ -1,0 +1,31 @@
+html {
+  font-size: 16px;
+  @include notebook {
+    font-size: 15px;
+  }
+  @include tablet {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $font_base;
+  line-height: 1.42;
+  color: $text_color;
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.container {
+  max-width: $content_width;
+  margin: 0 auto;
+  width: 95%;
+  @include phone {
+    width: 85%;
+  }
+}

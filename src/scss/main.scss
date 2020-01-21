@@ -1,0 +1,9 @@
+@import "core/_variables";
+@import "core/_mixins";
+@import "core/_fonts";
+@import "core/_reset";
+@import "core/_base";
+
+@import 'layout/*.scss';
+@import 'blocks/*.scss';
+@import 'forms/*.scss';

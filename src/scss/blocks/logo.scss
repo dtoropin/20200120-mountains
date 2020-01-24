@@ -1,15 +1,16 @@
 .logo {
+  display: inline-block;
   font-family: Bringin;
   font-size: 29px;
   color: $accent_color;
   text-transform: capitalize;
-  transition: transform .3s ease;
+  transition: transform .15s ease;
 
   &__parts {
     color: #95a5ad;
   }
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
   }
 }

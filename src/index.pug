@@ -18,5 +18,17 @@ body
       .first__content
         include ./pug/welcome.pug
 
+    section.about
+      .about__container.container
+        .about__text
+          h2.about__head about us
+          .about__subs
+            p Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
+          .about__btn
+            a.btn.btn--default(href="#") read more
+        .about__photo
+          img(src="files/img/about/Curves-31.jpg" alt="photo1").about__pic.about__pic--right
+          img(src="files/img/about/16047839768_3d53d0b471_z.jpg" alt="photo2").about__pic.about__pic--left
+
   //- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
   script(src="files/main.min.js")

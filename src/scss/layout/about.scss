@@ -1,0 +1,46 @@
+.about {
+  height: 501px;
+}
+
+.about__container {
+  background: url(img/about/map_world_dotted.png) no-repeat center / contain;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__text {
+  width: 352px;
+  flex-shrink: 0;
+}
+
+.about__head {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.about__subs {
+  color: #949494;
+  margin-bottom: 30px;
+}
+
+.about__photo {
+  position: relative;
+}
+
+.about__pic {
+  position: relative;
+
+  &--right {
+    width: 89.96%;
+    right: -200px;
+    top: -40px;
+  }
+  &--left {
+    width: 39.06%;
+    left: 90px;
+    top: -100px;
+  }
+}

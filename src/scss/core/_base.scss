@@ -13,6 +13,7 @@ body {
   font-family: $font_base;
   line-height: 1.42;
   color: $text_color;
+  overflow-x: hidden;
   &.noscroll {
     overflow: hidden;
   }

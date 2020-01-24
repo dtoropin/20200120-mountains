@@ -1,4 +1,13 @@
 .first {
   min-height: 100vh;
   background: url(img/15042304012_74fcf85e2e.jpg) no-repeat left top / cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.first__content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

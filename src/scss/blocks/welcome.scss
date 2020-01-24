@@ -1,0 +1,28 @@
+.welcome {
+  max-width: 1135px;
+  width: 90%;
+  border: solid 3px #ffffff;
+  padding: 43px 40px;
+  color: #fff;
+}
+
+.welcome__head {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  & span {
+    display: block;
+    font-family: Bringin;
+    font-size: 66px;
+    line-height: 20px;
+    color: $accent_color;
+  }
+}
+
+.welcome__subs {
+  font-size: 18px;
+  opacity: 0.75;
+  max-width: 434px;
+  margin-bottom: 27px;
+}

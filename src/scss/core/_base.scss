@@ -32,6 +32,24 @@ body {
   }
 }
 
+.section-title {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+
+  &::before {
+    content: '';
+    display: block;
+    margin: 0 auto 35px;
+    width: 81px;
+    height: 7px;
+    background: url(img/waves.png) no-repeat center / cover;
+  }
+}
+
 .btn {
   display: inline-block;
   font-family: Raleway;

@@ -1,0 +1,98 @@
+.tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tiles__item {
+  display: flex;
+  flex-direction: column;
+  &--love > .tiles__img::after {
+    background-image: url(img/journal/heart.png);
+  }
+  &--tree > .tiles__img::after {
+    background-image: url(img/journal/leaf.png);
+  }
+  &--water > .tiles__img::after {
+    background-image: url(img/journal/drop.png);
+  }
+}
+
+.tiles__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.tiles__subs {
+  position: relative;
+  padding: 47px 30px;
+  text-align: center;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+  }
+}
+
+.tiles__head {
+  font-size: 11px;
+  font-weight: bold;
+  color: #16b5ef;
+  margin-bottom: 55px;
+  text-transform: uppercase;
+}
+
+.tiles__title {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: #212121;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  & span {
+    text-decoration: line-through;
+  }
+}
+
+.tiles__text {
+  color: #777777;
+  margin-bottom: 39px;
+  line-height: 1.64;
+}
+
+.tiles__number {
+  font-family: TimesNewRomanPSMT;
+  font-size: 14px;
+  color: #212121;
+}
+
+.tiles__item:nth-child(even) {
+  flex-direction: column-reverse;
+  & > .tiles__subs::before {
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #ffffff transparent transparent transparent;
+  }
+}

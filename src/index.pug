@@ -30,5 +30,10 @@ body
           img(src="files/img/about/Curves-31.jpg" alt="photo1").about__pic.about__pic--right
           img(src="files/img/about/16047839768_3d53d0b471_z.jpg" alt="photo2").about__pic.about__pic--left
 
-  //- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+    section.journal
+      h2.section-title our journal
+      .journal__container.container
+        include ./pug/tiles.pug
+
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js")
   script(src="files/main.min.js")

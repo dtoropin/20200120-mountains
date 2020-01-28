@@ -1,10 +1,3 @@
-"use strict";
-
-(function () {// code
-})();
-
-;
-
 (function () {
   var subs = $('.tiles__subs');
   var img = $('.tiles__img');
@@ -13,8 +6,11 @@
   function blockHeight() {
     $.each(subs, function (i) {
       var item = $(subs[i]);
-      height = item.height() > height ? item.height() : height;
+      height = item.height() > height
+                ? item.height()
+                : height
     });
+
     subs.css('height', height);
     img.css('height', height);
   }
@@ -22,4 +18,3 @@
   blockHeight();
   window.onresize = blockHeight();
 })();
-//# sourceMappingURL=main.min.js.map

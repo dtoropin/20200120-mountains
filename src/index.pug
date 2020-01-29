@@ -39,14 +39,45 @@ body
       .application__container.container
         h2.section-title DO YOU WANNA GO?
         .application__text
-          p Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
-        
+          p Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.        
         form(action="#").application__form
           input(type="text" name="name" placeholder="Your name:" required)
           input(type="tel" name="phone" placeholder="Your phone:" pattern="8[0-9]{10}" required)
           button(type="submit").btn.btn--default ORDER NOW
-        
         .application__warn * Your data will not be transferred
+
+    section.work
+      .work__container.container
+        h2.section-title HOW WE WORK
+        ul.work__list
+          li.work__item
+            .work__number 1
+            .work__pic.work__pic--1
+            .work__desk
+              h4.work__head Lorem ipsum dolor sit
+              .work__text
+                p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          li.work__item
+            .work__number 2
+            .work__pic.work__pic--2
+            .work__desk
+              h4.work__head Lorem ipsum dolor sit
+              .work__text
+                p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          li.work__item
+            .work__number 3
+            .work__pic.work__pic--3
+            .work__desk
+              h4.work__head Lorem ipsum dolor sit
+              .work__text
+                p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+          li.work__item
+            .work__number 4
+            .work__pic.work__pic--4
+            .work__desk
+              h4.work__head Lorem ipsum dolor sit
+              .work__text
+                p amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
 
   script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js")
   script(src="files/main.min.js")

@@ -333,6 +333,58 @@ input, textarea {
   padding-top: 70px;
   padding-bottom: 90px; }
 
+.work {
+  padding-top: 70px;
+  padding-bottom: 50px; }
+
+.work__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+.work__item {
+  text-align: center; }
+
+.work__number {
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 900;
+  color: #3bb0eb;
+  padding: 13px 20px;
+  border-radius: 50%;
+  border: 3px solid #3bb0eb;
+  margin-bottom: 58px; }
+
+.work__pic {
+  width: 179px;
+  height: 179px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 29px; }
+  .work__pic--1 {
+    background-image: url(img/work/1.png); }
+  .work__pic--2 {
+    background-image: url(img/work/2.png); }
+  .work__pic--3 {
+    background-image: url(img/work/3.png); }
+  .work__pic--4 {
+    background-image: url(img/work/4.png); }
+
+.work__desk {
+  font-family: Roboto; }
+
+.work__head {
+  font-size: 18px;
+  font-weight: 900;
+  color: #2c2e37; }
+
+.work__text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #949494; }
+
 .logo {
   display: inline-block;
   font-family: Bringin;

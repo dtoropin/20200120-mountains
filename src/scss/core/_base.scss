@@ -82,3 +82,10 @@ body {
     }
   }
 }
+
+input, textarea {
+  box-sizing: border-box;
+  display: inline-block;
+  outline: none;
+  border: none;
+}

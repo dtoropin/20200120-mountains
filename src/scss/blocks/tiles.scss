@@ -89,9 +89,6 @@
   flex-direction: column-reverse;
   & > .tiles__subs::before {
     top: 100%;
-    width: 0;
-    height: 0;
-    border-style: solid;
     border-width: 10px 10px 0 10px;
     border-color: #ffffff transparent transparent transparent;
   }

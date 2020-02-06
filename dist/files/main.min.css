@@ -333,13 +333,19 @@ input, textarea {
   padding-top: 70px;
   padding-bottom: 90px; }
 
+.travel {
+  background: url(img/travel/travel-bg.jpg) no-repeat center/cover;
+  padding-top: 50px;
+  padding-bottom: 470px; }
+
 .work {
   padding-top: 70px;
   padding-bottom: 50px; }
 
 .work__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px; }
 
 .work__item {
   text-align: center; }
@@ -385,6 +391,70 @@ input, textarea {
   font-weight: 300;
   color: #949494; }
 
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 35px; }
+
+.card__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer; }
+  .card__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    transition: .3s background ease; }
+  .card__item:hover::before {
+    background: rgba(0, 0, 0, 0.1); }
+
+.card__body {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; }
+
+.card__stars {
+  position: absolute;
+  top: 20px;
+  left: 20px; }
+
+.card__title {
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-transform: capitalize; }
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4); }
+
+.card__old-price {
+  font-size: 18px;
+  text-decoration: line-through;
+  margin-right: 5px; }
+  .card__old-price::after {
+    content: '$'; }
+
+.card__new-price {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 0.85; }
+  .card__new-price::before {
+    content: '$'; }
+
 .logo {
   display: inline-block;
   font-family: Bringin;
@@ -414,6 +484,16 @@ input, textarea {
   transition: .3s border ease; }
   .nav__link:hover {
     border-bottom: 2px solid #36aeea; }
+
+.stars {
+  display: flex; }
+
+.stars__item::after {
+  content: '\2605';
+  color: #fff;
+  text-shadow: 0 0 16px rgba(6, 6, 6, 0.19);
+  font-size: 16px;
+  margin-right: 3px; }
 
 .tiles {
   display: grid;

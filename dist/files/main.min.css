@@ -314,6 +314,32 @@ input, textarea {
   justify-content: center;
   align-items: center; }
 
+.galery {
+  padding-top: 70px;
+  padding-bottom: 75px; }
+
+.galery__container {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 23.03% 31.6% 40.02%;
+  grid-column-gap: 30px; }
+
+.galery__column {
+  height: 100%; }
+  .galery__column:nth-child(even) > .galery__pic {
+    height: 40%; }
+    .galery__column:nth-child(even) > .galery__pic + .galery__pic {
+      height: 60%; }
+
+.galery__pic {
+  height: 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .galery__pic + .galery__pic {
+    height: 45%;
+    margin-top: 30px; }
+
 .header {
   background: rgba(255, 255, 255, 0.23);
   padding-top: 25px;

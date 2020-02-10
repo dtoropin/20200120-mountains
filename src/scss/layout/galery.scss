@@ -1,0 +1,32 @@
+.galery {
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+
+.galery__container {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 23.03% 31.6% 40.02%;
+  grid-column-gap: 30px;
+}
+
+.galery__column {
+  height: 100%;
+  &:nth-child(even) > .galery__pic {
+    height: 40%;
+    & + .galery__pic {
+      height: 60%;
+    }
+  }
+}
+
+.galery__pic {
+  height: 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  & + .galery__pic {
+    height: 45%;
+    margin-top: 30px;
+  }
+}

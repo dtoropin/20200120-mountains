@@ -84,5 +84,18 @@ body
       .travel__container.container
         include ./pug/card.pug
 
+    section.galery
+      h2.section-title Gallery
+      .galery__container.container
+        .galery__column
+          .galery__pic(style='background-image:url("files/img/galery/1.jpg")')
+          .galery__pic(style='background-image:url("files/img/galery/2.jpg")')
+        .galery__column
+          .galery__pic(style='background-image:url("files/img/galery/3.jpg")')
+          .galery__pic(style='background-image:url("files/img/galery/4.jpg")')
+        .galery__column
+          .galery__pic(style='background-image:url("files/img/galery/5.jpg")')
+          .galery__pic(style='background-image:url("files/img/galery/6.jpg")')
+
   script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js")
   script(src="files/main.min.js")

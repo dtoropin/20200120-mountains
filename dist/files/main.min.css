@@ -359,6 +359,11 @@ input, textarea {
   padding-top: 70px;
   padding-bottom: 90px; }
 
+.reviews {
+  padding-top: 70px;
+  padding-bottom: 300px;
+  background: url(img/bg-rewiews.png) no-repeat center/cover; }
+
 .travel {
   background: url(img/travel/travel-bg.jpg) no-repeat center/cover;
   padding-top: 50px;
@@ -480,6 +485,45 @@ input, textarea {
   line-height: 0.85; }
   .card__new-price::before {
     content: '$'; }
+
+.comments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 55px; }
+
+.comments__item::before {
+  content: '\201c';
+  color: #bcbcbc;
+  font-family: LeagueGothic;
+  font-size: 92px;
+  line-height: 0.36;
+  margin-bottom: 15px; }
+
+.comments__text {
+  font-size: 18px;
+  color: #bcbcbc;
+  margin-bottom: 30px; }
+
+.comments__user {
+  display: flex;
+  align-items: center; }
+
+.comments__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-position: center;
+  margin-right: 20px; }
+
+.comments__name {
+  font-weight: bold;
+  color: #36aeea;
+  margin-right: 5px;
+  text-transform: capitalize; }
+
+.comments__position {
+  font-weight: 300;
+  color: #36aeea; }
 
 .logo {
   display: inline-block;

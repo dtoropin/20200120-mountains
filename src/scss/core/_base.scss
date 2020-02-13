@@ -84,8 +84,13 @@ body {
 }
 
 input, textarea {
+  width: 100%;
   box-sizing: border-box;
   display: inline-block;
   outline: none;
   border: none;
+}
+
+.block-group {
+  background: url(img/bg-rewiews.jpg) no-repeat center / cover;
 }

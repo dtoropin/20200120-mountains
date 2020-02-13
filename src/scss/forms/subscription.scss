@@ -1,0 +1,24 @@
+.subscription__row + .subscription__row {
+  margin-top: 20px;
+}
+
+.subscription__input {
+  padding: 24px 19px;
+  font-family: Roboto;
+  font-size: 18px;
+  border-radius: 4px;
+  &::placeholder {
+    color: #ccc;
+  }
+}
+
+.subscription__btn {
+  width: 100%;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 24px 19px;
+  background-color: #36aeea;
+  letter-spacing: 2.56px;
+}

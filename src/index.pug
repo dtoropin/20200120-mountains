@@ -97,10 +97,19 @@ body
           .galery__pic(style='background-image:url("files/img/galery/5.jpg")')
           .galery__pic(style='background-image:url("files/img/galery/6.jpg")')
 
-    section.reviews
-      h2.section-title our Clients say
-      .rewiews__container.container
-        include ./pug/comments.pug
+    .block-group
+      section.reviews
+        h2.section-title our Clients say
+        .rewiews__container.container
+          include ./pug/comments.pug
+
+      section.contacts
+        .contacts__container
+          h2.contacts__head CONTACTS
+          span.contacts__subs Sign up for our newsletter to receive updates
+          include ./pug/form.pug
+
+    
 
   script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js")
   script(src="files/main.min.js")

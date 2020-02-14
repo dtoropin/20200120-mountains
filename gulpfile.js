@@ -35,12 +35,11 @@ function fonts() {
 
 function image() {
   return src(path.img.src)
-    // .pipe(image())
     .pipe(imagemin({
       interlaced: true,
       progressive: true,
       optimizationLevel: 5,
-      svgoPlugins: [{ removeViewBox: true }]
+      // svgoPlugins: [{ removeViewBox: true }]
     }))
     .pipe(dest(path.img.dest))
     .pipe(gulpif(ENV === 'dev', reload({ stream: true })));
@@ -120,7 +119,7 @@ task('sprite', () => {
     }))
     .pipe(svgSprite({
       mode: {
-        symbol: {
+        stack: {
           sprite: "../sprite.svg"
         }
       }

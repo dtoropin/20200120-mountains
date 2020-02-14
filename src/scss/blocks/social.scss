@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+}
+
+.social__item {
+  & + .social__item {
+    margin-left: 8px;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-shadow: inset 0px 2px 1px 0 rgba(255, 255, 255, 0.25);
+  &--tw {
+    background-color: #29c5f6;
+  }
+  &--fb {
+    background-color: #6788ce;
+  }
+  &--vk {
+    background-color: #54769a;
+  }
+  &:hover > .social__icon {
+    fill: #ccc;
+  }
+}
+
+.social__icon {
+  display: block;
+  width: 17px;
+  height: 17px;
+  fill: #fff;
+  transition: .3s fill ease;
+}

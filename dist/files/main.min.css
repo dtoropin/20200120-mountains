@@ -344,6 +344,29 @@ input, textarea {
   justify-content: center;
   align-items: center; }
 
+.footer {
+  background: #3c535b;
+  padding-top: 25px;
+  padding-bottom: 20px; }
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.footer__copy {
+  font-size: 18px;
+  color: #fff; }
+
+.footer__phone {
+  font-family: Roboto;
+  font-size: 27px;
+  font-weight: 900;
+  color: #fff;
+  transition: .3s color ease; }
+  .footer__phone:hover {
+    color: #d9d9d9; }
+
 .galery {
   padding-top: 70px;
   padding-bottom: 75px; }
@@ -583,6 +606,35 @@ input, textarea {
   transition: .3s border ease; }
   .nav__link:hover {
     border-bottom: 2px solid #36aeea; }
+
+.social {
+  display: flex; }
+
+.social__item + .social__item {
+  margin-left: 8px; }
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-shadow: inset 0px 2px 1px 0 rgba(255, 255, 255, 0.25); }
+  .social__link--tw {
+    background-color: #29c5f6; }
+  .social__link--fb {
+    background-color: #6788ce; }
+  .social__link--vk {
+    background-color: #54769a; }
+  .social__link:hover > .social__icon {
+    fill: #ccc; }
+
+.social__icon {
+  display: block;
+  width: 17px;
+  height: 17px;
+  fill: #fff;
+  transition: .3s fill ease; }
 
 .stars {
   display: flex; }

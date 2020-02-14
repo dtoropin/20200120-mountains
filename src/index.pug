@@ -109,7 +109,14 @@ body
           span.contacts__subs Sign up for our newsletter to receive updates
           include ./pug/form.pug
 
-    
+    footer.footer
+      .footer__container.container
+        .footer__copy
+          .copy All rights reserved 2015
+        .footer__social
+          include ./pug/social.pug
+        .footer__phone
+          a.phone(href="tel:+79817773865") 8 (981) 777-3865
 
   script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js")
   script(src="files/main.min.js")

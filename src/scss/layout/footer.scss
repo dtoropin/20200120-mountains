@@ -1,0 +1,27 @@
+.footer {
+  background: #3c535b;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copy {
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer__phone {
+  font-family: Roboto;
+  font-size: 27px;
+  font-weight: 900;
+  color: #fff;
+  transition: .3s color ease;
+  &:hover {
+    color: darken(#fff, 15%);
+  }
+}
